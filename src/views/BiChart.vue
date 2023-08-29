@@ -7,7 +7,7 @@ const wuJieOptions = computed(() => ({
   width: '100%',
   height: '100%',
   name: 'BIChart',
-  url: useAppRouter('BiCHart'),
+  url: useAppRouter('BiChart'),
   sync: true,
   fetch: fetch,
   props: {},

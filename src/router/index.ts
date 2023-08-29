@@ -10,11 +10,11 @@ const router = createRouter({
     },
     {
       path: '/bi-chart',
-      name: 'BiCHart',
+      name: 'BiChart',
       meta: {
         title: 'BI图表',
       },
-      component: () => import('../views/BiCHart.vue')
+      component: () => import('../views/BiChart.vue')
     },
     {
       path: '/bdsaas-bc',

@@ -10,7 +10,6 @@
 ## 开始
 
 ```sh
-$ pnpm run dev
-$ pnpm run dev:all
+$ pnpm run dev-all
 ```
 

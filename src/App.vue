@@ -17,7 +17,7 @@ const menuData = [
       {
         icon: 'icon-things-icon-2',
         title: 'BI图表',
-        routeName: 'BiCHart',
+        routeName: 'BiChart',
         showItem: true,
         authKeys: []
       },

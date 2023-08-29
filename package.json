@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev:all": "pnpm -r run dev",
-    "dev": "vite",
+    "dev-all": "run-p dev dev-all-child",
+    "dev": "vite --mode beta",
+    "dev-all-child": "pnpm -r run dev",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
+    "build-demo": "vite build --mode demo",
+    "build-beta": "vite build --mode beta",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
