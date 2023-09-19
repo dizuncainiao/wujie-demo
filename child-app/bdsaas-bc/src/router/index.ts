@@ -46,6 +46,11 @@ export const routes: Array<RouteRecordRaw> = [
     path: '/table-util-demo',
     name: 'TableUtilDemo',
     component: () => import('@/views/bc-demo/table-util-demo/TableUtilDemo.vue')
+  },
+  {
+    path: '/org-select-modal-demo',
+    name: 'OrgSelectionDemo',
+    component: () => import('@/views/bc-demo/org-select-modal-demo/OrgSelectModal.vue')
   }
 ]
 

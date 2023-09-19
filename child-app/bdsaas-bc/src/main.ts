@@ -1,6 +1,7 @@
 import '@/assets/style/base.less'
 import 'bdsaas-bc/dist/es/style.css'
 import 'blocks-next/theme-default/index.css'
+import '@/plugins/bdsaas-bc'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'

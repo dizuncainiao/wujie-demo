@@ -91,11 +91,14 @@ importers:
   child-app/bdsaas-bc:
     dependencies:
       bdsaas-bc:
-        specifier: ^0.0.25
-        version: 0.0.25(aplayer@1.10.1)(axios@1.4.0)(lodash-es@4.17.21)(md5@2.3.0)(qs@6.11.2)(vue-draggable-next@2.2.1)(vue-router@4.2.4)(vue@3.3.4)
+        specifier: ^0.0.36
+        version: 0.0.36(aplayer@1.10.1)(axios@1.4.0)(lodash-es@4.17.21)(md5@2.3.0)(qs@6.11.2)(vue-draggable-next@2.2.1)(vue-router@4.2.4)(vue@3.3.4)
       blocks-next:
-        specifier: 1.0.1-alpha.35
-        version: 1.0.1-alpha.35(vue@3.3.4)
+        specifier: 1.0.1-alpha.41.1
+        version: 1.0.1-alpha.41.1(vue@3.3.4)
+      md5:
+        specifier: ^2.3.0
+        version: 2.3.0
       vue:
         specifier: ^3.3.4
         version: 3.3.4
@@ -106,6 +109,9 @@ importers:
         specifier: ^1.0.18
         version: 1.0.18(vue@3.3.4)
     devDependencies:
+      '@types/md5':
+        specifier: ^2.3.2
+        version: 2.3.2
       '@vitejs/plugin-vue':
         specifier: ^4.2.3
         version: 4.3.3(vite@4.4.9)(vue@3.3.4)
@@ -1459,7 +1465,7 @@ packages:
     dependencies:
       aplayer: 1.10.1
       axios: 1.4.0
-      blocks-next: 1.0.1-alpha.36.4(vue@3.3.4)
+      blocks-next: 1.0.1-alpha.41.1(vue@3.3.4)
       lodash-es: 4.17.21
       md5: 2.3.0
       qs: 6.11.2
@@ -1482,7 +1488,30 @@ packages:
     dependencies:
       aplayer: 1.10.1
       axios: 1.4.0
-      blocks-next: 1.0.1-alpha.36.4(vue@3.3.4)
+      blocks-next: 1.0.1-alpha.41.1(vue@3.3.4)
+      lodash-es: 4.17.21
+      md5: 2.3.0
+      qs: 6.11.2
+      vue: 3.3.4
+      vue-draggable-next: 2.2.1(sortablejs@1.15.0)(vue@3.3.4)
+      vue-router: 4.2.4(vue@3.3.4)
+    dev: false
+
+  /bdsaas-bc@0.0.36(aplayer@1.10.1)(axios@1.4.0)(lodash-es@4.17.21)(md5@2.3.0)(qs@6.11.2)(vue-draggable-next@2.2.1)(vue-router@4.2.4)(vue@3.3.4):
+    resolution: {integrity: sha512-kq3SIZ35NxBwDF840//E+sf2gSczqcDoRX7qtTh9JBvMwuPjME3BAwulfztT+RWFNmnOEIfWYHRVtU7WvIjjUQ==}
+    peerDependencies:
+      aplayer: ^1.10.1
+      axios: ^1.4.0
+      lodash-es: ^4.17.21
+      md5: ^2.3.0
+      qs: ^6.11.1
+      vue: ^3.2.47
+      vue-draggable-next: ^2.2.1
+      vue-router: ^4.1.6
+    dependencies:
+      aplayer: 1.10.1
+      axios: 1.4.0
+      blocks-next: 1.0.1-alpha.41.1(vue@3.3.4)
       lodash-es: 4.17.21
       md5: 2.3.0
       qs: 6.11.2
@@ -1506,16 +1535,6 @@ packages:
       vue: 3.3.4
     dev: false
 
-  /blocks-next@1.0.1-alpha.35(vue@3.3.4):
-    resolution: {integrity: sha512-zXy/a8419G7XmOkqXbGXKRVnspGMxyKWRFmyg6/53ZPXPsfwGNvGcYCK6fM8L2tfMYlZ0v7xmaS+p92bUzgbTQ==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      async-validator: 4.2.5
-      resize-observer-polyfill: 1.5.1
-      vue: 3.3.4
-    dev: false
-
   /blocks-next@1.0.1-alpha.36.3(vue@3.3.4):
     resolution: {integrity: sha512-3V0LKHfBuTiGduHatvQIxyvOmYeUhOVCQXXihSJajGxd4QoaYg7hr/iOyWjWnVwg/OQ29TUnQFKglZ5GIDQCUg==}
     peerDependencies:
@@ -1526,8 +1545,8 @@ packages:
       vue: 3.3.4
     dev: false
 
-  /blocks-next@1.0.1-alpha.36.4(vue@3.3.4):
-    resolution: {integrity: sha512-MULwxBDV57MUBKRTT3xdtAtG8tarLl6efjOGVOmdsBZNnthfQmwc64fHBldyPwcr+ENuCF31Uv14ISEQxSm6bg==}
+  /blocks-next@1.0.1-alpha.41.1(vue@3.3.4):
+    resolution: {integrity: sha512-M1uLQhY00rogRWVgLapE78Klpn7vYiiw0FLa9mVMBQW4o5q0gZlsDxA2GgQZb48d7UB0lPBmP4vdPUX4ySfNEg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -1871,7 +1890,7 @@ packages:
       vue-echarts: 6.5.2
     dependencies:
       axios: 1.4.0
-      blocks-next: 1.0.1-alpha.36.4(vue@3.3.4)
+      blocks-next: 1.0.1-alpha.41.1(vue@3.3.4)
       dayjs: 1.11.9
       echarts: 5.4.1
       lodash-es: 4.17.21
